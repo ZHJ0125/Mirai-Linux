@@ -1,0 +1,87 @@
+nohup: ignoring input
+  17:44:49 [INFO] iTXTech Mirai Console Loader version 1.2.2-60c67fb
+  17:44:49 [INFO] https://github.com/iTXTech/mirai-console-loader
+  17:44:49 [INFO] This program is licensed under GNU AGPL v3
+  17:44:50 [INFO] Verifying "net.mamoe:mirai-console" v2.8.0-M1
+  17:44:51 [INFO] Verifying "net.mamoe:mirai-console-terminal" v2.8.0-M1
+  17:44:51 [INFO] Verifying "net.mamoe:mirai-core-all" v2.8.0-M1
+  17:44:51 [INFO] Verifying "org.itxtech:mcl-addon" v1.2.2
+  17:44:52 [INFO] Fetching Mirai Console Loader Announcement...
+  17:44:52 [INFO] Mirai Console Loader Announcement:
+Mirai Console Loader 公告栏
+
+如果在图片上传的时候遇到问题请与我们联系 (需要提供图片文件源本)
+`- 如 Unsupported image type for ExternalResource *
+`  considering use gif/png/bmp/jpg format.
+`- Tracker: https://github.com/mamoe/mirai/issues/new/choose
+
+常用资源整合
+`- https://mirai.mamoe.net/topic/653
+
+[92m2021-10-20 17:44:53 I/main: Starting mirai-console...[0m[m
+[92m2021-10-20 17:44:53 I/main: Backend: version 2.8.0-M1, built on 2021-09-22 17:49:01.[0m[m
+[92m2021-10-20 17:44:53 I/main: Frontend Terminal: version 2.8.0-M1, provided by Mamoe Technologies[0m[m
+[92m2021-10-20 17:44:53 I/main: Welcome to visit https://mirai.mamoe.net/[0m[m
+[92m2021-10-20 17:44:53 I/plugin: Successfully loaded plugin TuLingBot v1.4.0[0m[m
+[92m2021-10-20 17:44:53 I/plugin: Successfully loaded plugin Setu v3.6.0[0m[m
+[92m2021-10-20 17:44:53 I/plugin: Successfully loaded plugin MCL Addon v1.2.2[0m[m
+[92m2021-10-20 17:44:54 I/main: Prepared built-in commands: autoLogin, help, login, permission, status, stop[0m[m
+[92m2021-10-20 17:44:54 I/TuLingBot: 配置文件目录 "/root/Project/Mirai-Linux/Development/data/TuLingBot"[0m[m
+[92m2021-10-20 17:44:54 I/TuLingBot: 群触发关键词为:[SpongeBob, @SpongeBob, 海绵宝宝, @海绵宝宝, 黄色海绵][0m[m
+[92m2021-10-20 17:44:54 I/TuLingBot: 私聊触发关键词为:[][0m[m
+[92m2021-10-20 17:44:54 I/Setu: Setu >> Enable.[0m[m
+[92m2021-10-20 17:44:54 I/Setu: Start Init...[0m[m
+[92m2021-10-20 17:44:54 I/Setu: [FileSystem] Init FileSystem.[0m[m
+[92m2021-10-20 17:44:54 I/Setu: [FileSystem] Init All Configs...[0m[m
+[92m2021-10-20 17:44:54 I/Setu: [FileSystem] Init >> ApplicationConfig.json[0m[m
+[92m2021-10-20 17:44:54 I/Setu: [FileSystem] Load Local File to Memory >> ApplicationConfig.json[0m[m
+[92m2021-10-20 17:44:54 I/Setu: [CommandSystem] Init CommandSystem.[0m[m
+[92m2021-10-20 17:44:54 I/Setu: End Init...[0m[m
+[92m2021-10-20 17:44:54 I/MCL Addon: iTXTech MCL Version: 1.2.2-60c67fb[0m[m
+[92m2021-10-20 17:44:54 I/main: 3 plugin(s) enabled.[0m[m
+[92m2021-10-20 17:44:54 I/main: Auto-login 2088667670[0m[m
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+[92m2021-10-20 17:44:56 I/Bot.2088667670: Loaded account secrets from local cache.[0m[m
+[92m2021-10-20 17:44:57 I/Bot.2088667670: Saved account secrets to local cache for fast login.[0m[m
+[92m2021-10-20 17:44:57 I/Bot.2088667670: Login successful.[0m[m
+[0m2021-10-20 17:44:59 V/Bot.2088667670: Event: BotOnlineEvent(bot=Bot(2088667670))[0m[m
+[92m2021-10-20 17:44:59 I/Bot.2088667670: Bot login successful.[0m[m
+[92m2021-10-20 17:44:59 I/main: mirai-console started successfully.[0m[m
+> [31m2021-10-20 17:44:59 E/console: Error in reading next command
+java.io.IOError: java.io.IOException: Bad file descriptor
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61)
+	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:913)
+	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:946)
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:637)
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:454)
+	at net.mamoe.mirai.console.terminal.ConsoleInputImpl$requestInput$2$1$1.run(ConsoleInputImpl.kt:45)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.base/java.io.FileInputStream.read0(Native Method)
+	at java.base/java.io.FileInputStream.read(Unknown Source)
+	at org.jline.utils.NonBlockingInputStreamImpl.run(NonBlockingInputStreamImpl.java:216)
+	... 1 more
+[0m[m
+[91m2021-10-20 17:44:59 W/console: Closing input service...[0m[m
+[0m2021-10-20 17:48:17 V/Bot.2088667670: [Mirai机器人测试群(519175451)] ZHJ0125(489275003) -> 海绵宝宝 在吗[0m[m
+[0m2021-10-20 17:48:18 V/Bot.2088667670: Group(519175451) <- [mirai:at:489275003] 我一直在等你找我聊天。[0m[m
+[0m2021-10-20 17:48:28 V/Bot.2088667670: [Mirai机器人测试群(519175451)] ZHJ0125(489275003) -> 来张图 风景[0m[m
+[0m2021-10-20 17:48:31 V/Bot.2088667670: Group(519175451) <- [mirai:image:{3E13C9DB-3E19-6FC3-AFF2-A4A52180A299}.jpg][0m[m
+[0m2021-10-20 17:48:42 V/Bot.2088667670: [Mirai机器人测试群(519175451)] ZHJ0125(489275003) -> gkd[0m[m
+[0m2021-10-20 17:48:44 V/Bot.2088667670: Group(519175451) <- [mirai:image:{964F612F-BE42-E67A-576B-9E7568678DF6}.jpg][0m[m
+[0m2021-10-20 17:50:44 V/Bot.2088667670: [Mirai机器人测试群(519175451)] ZHJ0125(489275003) -> gkd[0m[m
+[0m2021-10-20 17:50:47 V/Bot.2088667670: Group(519175451) <- [mirai:image:{A715BD23-FF3E-5A1D-F7FC-B19AD993ED3B}.jpg][0m[m
+[0m2021-10-20 17:50:55 V/Bot.2088667670: [Mirai机器人测试群(519175451)] ZHJ0125(489275003) -> gkd[0m[m
+[0m2021-10-20 17:50:58 V/Bot.2088667670: Group(519175451) <- [mirai:image:{CACB6689-1D16-187F-2F51-D1A2A95277AC}.jpg][0m[m
+[0m2021-10-20 17:51:03 V/Bot.2088667670: [Mirai机器人测试群(519175451)] ZHJ0125(489275003) -> gkd[0m[m
+[0m2021-10-20 17:51:05 V/Bot.2088667670: Group(519175451) <- [mirai:image:{DDE5A33A-02EB-32BB-97B4-AD647B1C188A}.jpg][0m[m
+[0m2021-10-20 17:51:15 V/Bot.2088667670: [Mirai机器人测试群(519175451)] ZHJ0125(489275003) -> 没意思[0m[m
